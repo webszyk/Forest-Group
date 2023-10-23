@@ -4,35 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Forest - najpiękniejsze parki na dolnymśląsku</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link
-  href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
-  rel="stylesheet"
-/>
-<link rel="stylesheet" href="/dist/css/styles.min.css" />
-<script
-  src="https://kit.fontawesome.com/1e2b8f248a.js"
-  crossorigin="anonymous"
-></script>
-
+    <!-- @include 'styles.kit' -->
   </head>
   <body>
-    <nav class="nav">
-  <div class="wrapper">
-    <div class="navbar__logo">
-      <a href="index.html"><i class="fa-solid fa-tree"></i> Forest</a>
-    </div>
-
-    <div class="nav__items">
-      <a href="#home" class="nav__item">Home</a>
-      <a href="#onas" class="nav__item">O nas</a>
-      <a href="#oferta" class="nav__item">Oferta</a>
-      <a href="kontakt.html" class="nav__item">Kontakt</a>
-    </div>
-  </div>
-</nav>
-
+    <!-- @include 'nav.kit' -->
 
     <header class="hero__img" id="home">
       <div class="hero__txt">
@@ -172,45 +147,7 @@
       </section>
     </main>
 
-    <footer>
-    <div class="wrapper">
-      <div class="footer__boxes">
-        <div class="footer__box">
-          <div class="footer__box-logo">
-            <i class="fa-solid fa-tree"></i> Forest
-          </div>
-        </div>
-
-        <div class="footer__box footer__info">
-          <h3 class="footer__box-title">O nas</h3>
-          <ul class="footer__box-list">
-            <li class="footer__box-item">Historia</li>
-            <li class="footer__box-item">Parki</li>
-            <li class="footer__box-item">Opinie</li>
-          </ul>
-        </div>
-
-        <div class="footer__box footer__info">
-          <h3 class="footer__box-title">Nasza firma</h3>
-          <ul class="footer__box-list">
-            <li class="footer__box-item">Praca</li>
-            <li class="footer__box-item">Kadry</li>
-            <li class="footer__box-item">Zarząd</li>
-          </ul>
-        </div>
-
-        <div class="footer__box footer__info">
-          <h3 class="footer__box-title">Dokumenty</h3>
-          <ul class="footer__box-list">
-            <li class="footer__box-item">Wnioski</li>
-            <li class="footer__box-item">Rezerwacje</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <hr />
-    <p>&copy; 2023 | Wykonanie: Karolina Szymaszkiewicz</p>
-  </footer>
+    <!-- @include 'footer.kit' -->
 
     <script src="/dist/js/main.min.js"></script>
   </body>

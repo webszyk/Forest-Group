@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forest</title>
+    <!-- @include 'styles.kit' -->
+  </head>
+  <body>
+    <!-- @include 'nav.kit' -->
+
+    <header class="hero__img" id="home">
+      <div class="hero__txt">
+        <h1>Kontakt</h1>
+        <p>Napisz do jeśli chciałbyś więcej informacji odnośie lasow</p>
+      </div>
+      <div class="hero__shadow"></div>
+    </header>
+
+    <main>
+      <section class="contact__boxes">
+        <div class="contact__box">
+          <h2 class="section-title">Formularz kontaktowy</h2>
+          <form>
+            <label for="name">Imię</label>
+            <input type="text" id="name" />
+
+            <label for="name">Telefon</label>
+            <input type="text" id="name" />
+
+            <label for="msg"></label>
+            <textarea name="msg" id="msg"></textarea>
+          </form>
+        </div>
+
+        <div class="contact__box">
+          <h2 class="section-title">Gdzie nas znajdziesz?</h2>
+          <a
+            href="https://www.google.com/maps/place/Restauracja+McDonald's/@50.0881922,19.8902693,17z/data=!3m1!4b1!4m6!3m5!1s0x47165a326d015c3b:0x47a12cd367a1f34e!8m2!3d50.0881922!4d19.8928442!16s%2Fg%2F1tftvpym?entry=ttu"
+            >Link do mapy</a
+          >
+        </div>
+      </section>
+    </main>
+
+    <!-- @include 'footer.kit' -->
+
+    <script src="/dist/js/main.min.js"></script>
+  </body>
+</html>
