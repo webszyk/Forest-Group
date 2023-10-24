@@ -10,24 +10,23 @@
     <!-- @include 'nav.kit' -->
 
     <header class="hero__img" id="home">
-      <div class="hero__txt">
-        <h1>Forest Group</h1>
-        <p>Najpiękniejsze parki w Twojej okolicy!</p>
+      <div class="hero__txt wrapper">
+        <p>Forest Group</p>
+        <h1>Najpiękniejszy park w Twojej okolicy!</h1>
       </div>
       <div class="hero__shadow"></div>
     </header>
 
     <main>
       <section class="aboutus" id="onas">
-        <h2 class="section-title">O nas</h2>
-
         <div class="wrapper">
+          <h2 class="section-title">O nas</h2>
+
           <div class="aboutus__box">
             <div class="aboutus__box-img">
               <img
                 src="/dist/img/waters-3095682_1920.jpg"
-                alt="Drzewo i jezioro"
-                class="aboutus__img"
+                alt="Piękny widok na jezorio i bujnie zielone drzewa."
               />
             </div>
             <div class="aboutus__box-text">
@@ -54,62 +53,73 @@
       </section>
 
       <section class="offer" id="oferta">
-        <h2 class="section-title">Oferta</h2>
-        <p class="offer__text">Wybierz jedna z naszych wspaniałych ofert!</p>
-        <a href="oferta.html" class="offer__card-btn">Pełna oferta</a>
-
         <div class="wrapper">
+          <h2 class="section-title">Oferta</h2>
+
+          <div class="offer__info">
+            <p class="offer__info-text">
+              Wybierz jedną z naszych wspaniałych ofert!
+            </p>
+            <a href="oferta.html" class="offer__info-btn link"
+              >Sprawdź pełną ofertę</a
+            >
+          </div>
+
           <div class="offer__cards">
             <div class="offer__card-info" onclick="void(0)">
               <h3 class="offer__card-title">Demo</h3>
-              <p class="offer_card-price">$ 0</p>
-              <p>
-                <i class="fa-solid fa-check" style="color: #63ca87"></i> opcja w
-                pakiecie
-              </p>
-              <p>
-                <i class="fa-solid fa-check" style="color: #63ca87"></i> opcja w
-                pakiecie
-              </p>
-              <p>
-                <i class="fa-solid fa-minus" style="color: #adadad"></i> opcja
-                poza pakietem
-              </p>
-              <p>
-                <i class="fa-solid fa-minus" style="color: #adadad"></i> opcja
-                poza pakietem
-              </p>
-              <p>
-                <i class="fa-solid fa-minus" style="color: #adadad"></i> opcja
-                poza pakietem
-              </p>
+              <p class="offer__card-price">$ 0</p>
+              <div class="offer__card-details">
+                <p>
+                  <i class="fa-solid fa-check" style="color: #63ca87"></i> opcja
+                  w pakiecie
+                </p>
+                <p>
+                  <i class="fa-solid fa-check" style="color: #63ca87"></i> opcja
+                  w pakiecie
+                </p>
+                <p>
+                  <i class="fa-solid fa-minus" style="color: #adadad"></i>
+                  <span>opcja poza pakietem</span>
+                </p>
+                <p>
+                  <i class="fa-solid fa-minus" style="color: #adadad"></i>
+                  <span>opcja poza pakietem</span>
+                </p>
+                <p>
+                  <i class="fa-solid fa-minus" style="color: #adadad"></i>
+                  <span>opcja poza pakietem</span>
+                </p>
+              </div>
 
               <button class="offer__card-btn">Wybierz</button>
             </div>
 
             <div class="offer__card-info" onclick="void(1)">
               <h3 class="offer__card-title">Standard</h3>
-              <p class="offer_card-price">$ 99</p>
-              <p>
-                <i class="fa-solid fa-check" style="color: #63ca87"></i> opcja w
-                pakiecie
-              </p>
-              <p>
-                <i class="fa-solid fa-check" style="color: #63ca87"></i> opcja w
-                pakiecie
-              </p>
-              <p>
-                <i class="fa-solid fa-minus" style="color: #adadad"></i> opcja
-                poza pakietem
-              </p>
-              <p>
-                <i class="fa-solid fa-minus" style="color: #adadad"></i> opcja
-                poza pakietem
-              </p>
-              <p>
-                <i class="fa-solid fa-minus" style="color: #adadad"></i> opcja
-                poza pakietem
-              </p>
+              <p class="offer__card-price">$ 99</p>
+              <div class="offer__card-details">
+                <p>
+                  <i class="fa-solid fa-check" style="color: #63ca87"></i> opcja
+                  w pakiecie
+                </p>
+                <p>
+                  <i class="fa-solid fa-check" style="color: #63ca87"></i> opcja
+                  w pakiecie
+                </p>
+                <p>
+                  <i class="fa-solid fa-check" style="color: #63ca87"></i> opcja
+                  w pakiecie
+                </p>
+                <p>
+                  <i class="fa-solid fa-minus" style="color: #adadad"></i>
+                  <span>opcja poza pakietem</span>
+                </p>
+                <p>
+                  <i class="fa-solid fa-minus" style="color: #adadad"></i>
+                  <span>opcja poza pakietem</span>
+                </p>
+              </div>
 
               <button class="offer__card-btn offer__card-btn--highlight">
                 Wybierz
@@ -118,27 +128,29 @@
 
             <div class="offer__card-info" onclick="void(2)">
               <h3 class="offer__card-title">Premium</h3>
-              <p class="offer_card-price">$ 299</p>
-              <p>
-                <i class="fa-solid fa-check" style="color: #63ca87"></i> opcja w
-                pakiecie
-              </p>
-              <p>
-                <i class="fa-solid fa-check" style="color: #63ca87"></i> opcja w
-                pakiecie
-              </p>
-              <p>
-                <i class="fa-solid fa-check" style="color: #63ca87"></i> opcja w
-                pakiecie
-              </p>
-              <p>
-                <i class="fa-solid fa-check" style="color: #63ca87"></i> opcja w
-                pakiecie
-              </p>
-              <p>
-                <i class="fa-solid fa-check" style="color: #63ca87"></i> opcja w
-                pakiecie
-              </p>
+              <p class="offer__card-price">$ 299</p>
+              <div class="offer__card-details">
+                <p>
+                  <i class="fa-solid fa-check" style="color: #63ca87"></i> opcja
+                  w pakiecie
+                </p>
+                <p>
+                  <i class="fa-solid fa-check" style="color: #63ca87"></i> opcja
+                  w pakiecie
+                </p>
+                <p>
+                  <i class="fa-solid fa-check" style="color: #63ca87"></i> opcja
+                  w pakiecie
+                </p>
+                <p>
+                  <i class="fa-solid fa-check" style="color: #63ca87"></i> opcja
+                  w pakiecie
+                </p>
+                <p>
+                  <i class="fa-solid fa-check" style="color: #63ca87"></i> opcja
+                  w pakiecie
+                </p>
+              </div>
 
               <button class="offer__card-btn">Wybierz</button>
             </div>

@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link
-  href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+  href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;500;400;700&display=swap"
   rel="stylesheet"
 />
 <link rel="stylesheet" href="/dist/css/styles.min.css" />
@@ -18,41 +18,38 @@
 
   </head>
   <body>
-    <nav class="nav">
-  <div class="wrapper">
-    <div class="navbar__logo">
-      <a href="index.html"><i class="fa-solid fa-tree"></i> Forest</a>
-    </div>
+    <nav class="nav wrapper">
+  <div class="nav__logo">
+    <a href="index.html"><i class="fa-solid fa-tree"></i> Forest</a>
+  </div>
 
-    <div class="nav__items">
-      <a href="#home" class="nav__item">Home</a>
-      <a href="#onas" class="nav__item">O nas</a>
-      <a href="#oferta" class="nav__item">Oferta</a>
-      <a href="kontakt.html" class="nav__item">Kontakt</a>
-    </div>
+  <div class="nav__items">
+    <a href="#home" class="nav__item">Home</a>
+    <a href="#onas" class="nav__item">O nas</a>
+    <a href="#oferta" class="nav__item">Oferta</a>
+    <a href="kontakt.html" class="nav__item">Kontakt</a>
   </div>
 </nav>
 
 
     <header class="hero__img" id="home">
-      <div class="hero__txt">
-        <h1>Forest Group</h1>
-        <p>Najpiękniejsze parki w Twojej okolicy!</p>
+      <div class="hero__txt wrapper">
+        <p>Forest Group</p>
+        <h1>Najpiękniejszy park w Twojej okolicy!</h1>
       </div>
       <div class="hero__shadow"></div>
     </header>
 
     <main>
       <section class="aboutus" id="onas">
-        <h2 class="section-title">O nas</h2>
-
         <div class="wrapper">
+          <h2 class="section-title">O nas</h2>
+
           <div class="aboutus__box">
             <div class="aboutus__box-img">
               <img
                 src="/dist/img/waters-3095682_1920.jpg"
-                alt="Drzewo i jezioro"
-                class="aboutus__img"
+                alt="Piękny widok na jezorio i bujnie zielone drzewa."
               />
             </div>
             <div class="aboutus__box-text">
@@ -79,62 +76,73 @@
       </section>
 
       <section class="offer" id="oferta">
-        <h2 class="section-title">Oferta</h2>
-        <p class="offer__text">Wybierz jedna z naszych wspaniałych ofert!</p>
-        <a href="oferta.html" class="offer__card-btn">Pełna oferta</a>
-
         <div class="wrapper">
+          <h2 class="section-title">Oferta</h2>
+
+          <div class="offer__info">
+            <p class="offer__info-text">
+              Wybierz jedną z naszych wspaniałych ofert!
+            </p>
+            <a href="oferta.html" class="offer__info-btn link"
+              >Sprawdź pełną ofertę</a
+            >
+          </div>
+
           <div class="offer__cards">
             <div class="offer__card-info" onclick="void(0)">
               <h3 class="offer__card-title">Demo</h3>
-              <p class="offer_card-price">$ 0</p>
-              <p>
-                <i class="fa-solid fa-check" style="color: #63ca87"></i> opcja w
-                pakiecie
-              </p>
-              <p>
-                <i class="fa-solid fa-check" style="color: #63ca87"></i> opcja w
-                pakiecie
-              </p>
-              <p>
-                <i class="fa-solid fa-minus" style="color: #adadad"></i> opcja
-                poza pakietem
-              </p>
-              <p>
-                <i class="fa-solid fa-minus" style="color: #adadad"></i> opcja
-                poza pakietem
-              </p>
-              <p>
-                <i class="fa-solid fa-minus" style="color: #adadad"></i> opcja
-                poza pakietem
-              </p>
+              <p class="offer__card-price">$ 0</p>
+              <div class="offer__card-details">
+                <p>
+                  <i class="fa-solid fa-check" style="color: #63ca87"></i> opcja
+                  w pakiecie
+                </p>
+                <p>
+                  <i class="fa-solid fa-check" style="color: #63ca87"></i> opcja
+                  w pakiecie
+                </p>
+                <p>
+                  <i class="fa-solid fa-minus" style="color: #adadad"></i>
+                  <span>opcja poza pakietem</span>
+                </p>
+                <p>
+                  <i class="fa-solid fa-minus" style="color: #adadad"></i>
+                  <span>opcja poza pakietem</span>
+                </p>
+                <p>
+                  <i class="fa-solid fa-minus" style="color: #adadad"></i>
+                  <span>opcja poza pakietem</span>
+                </p>
+              </div>
 
               <button class="offer__card-btn">Wybierz</button>
             </div>
 
             <div class="offer__card-info" onclick="void(1)">
               <h3 class="offer__card-title">Standard</h3>
-              <p class="offer_card-price">$ 99</p>
-              <p>
-                <i class="fa-solid fa-check" style="color: #63ca87"></i> opcja w
-                pakiecie
-              </p>
-              <p>
-                <i class="fa-solid fa-check" style="color: #63ca87"></i> opcja w
-                pakiecie
-              </p>
-              <p>
-                <i class="fa-solid fa-minus" style="color: #adadad"></i> opcja
-                poza pakietem
-              </p>
-              <p>
-                <i class="fa-solid fa-minus" style="color: #adadad"></i> opcja
-                poza pakietem
-              </p>
-              <p>
-                <i class="fa-solid fa-minus" style="color: #adadad"></i> opcja
-                poza pakietem
-              </p>
+              <p class="offer__card-price">$ 99</p>
+              <div class="offer__card-details">
+                <p>
+                  <i class="fa-solid fa-check" style="color: #63ca87"></i> opcja
+                  w pakiecie
+                </p>
+                <p>
+                  <i class="fa-solid fa-check" style="color: #63ca87"></i> opcja
+                  w pakiecie
+                </p>
+                <p>
+                  <i class="fa-solid fa-check" style="color: #63ca87"></i> opcja
+                  w pakiecie
+                </p>
+                <p>
+                  <i class="fa-solid fa-minus" style="color: #adadad"></i>
+                  <span>opcja poza pakietem</span>
+                </p>
+                <p>
+                  <i class="fa-solid fa-minus" style="color: #adadad"></i>
+                  <span>opcja poza pakietem</span>
+                </p>
+              </div>
 
               <button class="offer__card-btn offer__card-btn--highlight">
                 Wybierz
@@ -143,27 +151,29 @@
 
             <div class="offer__card-info" onclick="void(2)">
               <h3 class="offer__card-title">Premium</h3>
-              <p class="offer_card-price">$ 299</p>
-              <p>
-                <i class="fa-solid fa-check" style="color: #63ca87"></i> opcja w
-                pakiecie
-              </p>
-              <p>
-                <i class="fa-solid fa-check" style="color: #63ca87"></i> opcja w
-                pakiecie
-              </p>
-              <p>
-                <i class="fa-solid fa-check" style="color: #63ca87"></i> opcja w
-                pakiecie
-              </p>
-              <p>
-                <i class="fa-solid fa-check" style="color: #63ca87"></i> opcja w
-                pakiecie
-              </p>
-              <p>
-                <i class="fa-solid fa-check" style="color: #63ca87"></i> opcja w
-                pakiecie
-              </p>
+              <p class="offer__card-price">$ 299</p>
+              <div class="offer__card-details">
+                <p>
+                  <i class="fa-solid fa-check" style="color: #63ca87"></i> opcja
+                  w pakiecie
+                </p>
+                <p>
+                  <i class="fa-solid fa-check" style="color: #63ca87"></i> opcja
+                  w pakiecie
+                </p>
+                <p>
+                  <i class="fa-solid fa-check" style="color: #63ca87"></i> opcja
+                  w pakiecie
+                </p>
+                <p>
+                  <i class="fa-solid fa-check" style="color: #63ca87"></i> opcja
+                  w pakiecie
+                </p>
+                <p>
+                  <i class="fa-solid fa-check" style="color: #63ca87"></i> opcja
+                  w pakiecie
+                </p>
+              </div>
 
               <button class="offer__card-btn">Wybierz</button>
             </div>
@@ -173,44 +183,47 @@
     </main>
 
     <footer>
-    <div class="wrapper">
-      <div class="footer__boxes">
-        <div class="footer__box">
-          <div class="footer__box-logo">
-            <i class="fa-solid fa-tree"></i> Forest
-          </div>
-        </div>
+  <div class="wrapper">
+    <div class="footer__boxes">
+      <div class="footer__box-logo">
+        <i class="fa-solid fa-tree"></i> Forest
+      </div>
 
-        <div class="footer__box footer__info">
+      <div class="footer__box">
+        <div class="footer__box-info">
           <h3 class="footer__box-title">O nas</h3>
           <ul class="footer__box-list">
-            <li class="footer__box-item">Historia</li>
-            <li class="footer__box-item">Parki</li>
-            <li class="footer__box-item">Opinie</li>
+            <li class="footer__box-item"><a href="#">Historia</a></li>
+            <li class="footer__box-item"><a href="#">Parki</a></li>
+            <li class="footer__box-item"><a href="#">Opinie</a></li>
           </ul>
         </div>
 
-        <div class="footer__box footer__info">
+        <div class="footer__box-info">
           <h3 class="footer__box-title">Nasza firma</h3>
           <ul class="footer__box-list">
-            <li class="footer__box-item">Praca</li>
-            <li class="footer__box-item">Kadry</li>
-            <li class="footer__box-item">Zarząd</li>
+            <li class="footer__box-item"><a href="#">Praca</a></li>
+            <li class="footer__box-item"><a href="#">Kadry</a></li>
+            <li class="footer__box-item"><a href="#">Zarząd</a></li>
           </ul>
         </div>
 
-        <div class="footer__box footer__info">
+        <div class="footer__box-info">
           <h3 class="footer__box-title">Dokumenty</h3>
           <ul class="footer__box-list">
-            <li class="footer__box-item">Wnioski</li>
-            <li class="footer__box-item">Rezerwacje</li>
+            <li class="footer__box-item"><a href="#">Wnioski</a></li>
+            <li class="footer__box-item"><a href="#">Rezerwacje</a></li>
           </ul>
         </div>
       </div>
     </div>
-    <hr />
-    <p>&copy; 2023 | Wykonanie: Karolina Szymaszkiewicz</p>
-  </footer>
+  </div>
+  <hr />
+  <p class="footer-text">
+    &copy; 2023 Forest Group Company Ltd. | Wykonanie: Karolina
+  </p>
+</footer>
+
 
     <script src="/dist/js/main.min.js"></script>
   </body>
