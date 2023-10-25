@@ -3,7 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Forest</title>
+    <meta name="author" content="KarolinaSzymaszkiewicz" />
+    <meta name="robots" content="index follow max-image-preview:standard" />
+    <title>
+      Wycieczki po prywatnych lasach - napisz do nas| Forest Group
+    </title>
+    <meta
+      name="description"
+      content="Jeśli nie wiesz jak zapisać się na wycieczkę po lesie lub kiedy i jak zwiedzać nasze oryginalne oraz najpięknejsze lasy to po prostu napisz do nas."
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link
@@ -50,36 +58,84 @@
 
 
     <header class="hero__img" id="home">
-      <div class="hero__txt">
-        <h1>Kontakt</h1>
-        <p>Napisz do jeśli chciałbyś więcej informacji odnośie lasow</p>
+      <div class="hero__txt wrapper">
+        <p>Forest Group</p>
+        <h1>Napisz do nas jeśli chciałbyś więcej informacji odnośie lasow</h1>
       </div>
       <div class="hero__shadow"></div>
     </header>
 
     <main>
-      <section class="contact__boxes">
-        <div class="contact__box">
-          <h2 class="section-title">Formularz kontaktowy</h2>
-          <form>
-            <label for="name">Imię</label>
-            <input type="text" id="name" />
 
-            <label for="name">Telefon</label>
-            <input type="text" id="name" />
+      <section class="aboutus" id="onas">
+        <div class="wrapper">
+          <h2 class="section-title">Kontakt</h2>
 
-            <label for="msg"></label>
-            <textarea name="msg" id="msg"></textarea>
-          </form>
+          <div class="aboutus__box">
+            <div class="aboutus__box-text">
+              <h3 class="aboutus__title">Formularz kontakowy</h3>
+              <form class="aboutus__form">
+                <label for="name" class="aboutus__form-label">Imię</label>
+                <input
+                  type="text"
+                  id="name"
+                  class="aboutus__form-box"
+                  placeholder="wpisz swoje imię"
+                />
+
+                <label for="name" class="aboutus__form-label">Telefon</label>
+                <input
+                  type="text"
+                  id="name"
+                  class="aboutus__form-box"
+                  placeholder="wpisz swoj email"
+                />
+
+                <label for="msg" class="aboutus__form-label"
+                  >Twoja wiadomość</label
+                >
+                <textarea
+                  name="msg"
+                  id="msg"
+                  class="aboutus__form-box"
+                  placeholder="napisz swoja wiadomość..."
+                ></textarea>
+                <button class="offer__card-btn " type="submit">Wyślij</button>
+              </form>
+            </div>
+            <div class="aboutus__box-text">
+              <h3 class="aboutus__title">Gdzie nas znajdziesz?</h3>
+              <div class="aboutus__map">
+                <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10239.592929627293!2d19.8928442!3d50.0881922!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47165a326d015c3b%3A0x47a12cd367a1f34e!2sRestauracja%20McDonald&#39;s!5e0!3m2!1spl!2spl!4v1698236753952!5m2!1spl!2spl"
+                width="600"
+                height="450"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+              </div>
+            </div>
+          </div>
         </div>
+      </section>
 
-        <div class="contact__box">
-          <h2 class="section-title">Gdzie nas znajdziesz?</h2>
-          <a
-            href="https://www.google.com/maps/place/Restauracja+McDonald's/@50.0881922,19.8902693,17z/data=!3m1!4b1!4m6!3m5!1s0x47165a326d015c3b:0x47a12cd367a1f34e!8m2!3d50.0881922!4d19.8928442!16s%2Fg%2F1tftvpym?entry=ttu"
-            >Link do mapy</a
-          >
-        </div>
+      <section class="wrapper">
+        <div class="aboutus__contact">
+          <div class="aboutus__contact-details">
+            <p>
+              <i class="fa-solid fa-phone"></i><span> Phone:</span>
+              <a href="tel:+48765-454-333">765-454-333</a>
+            </p>
+            
+          </div>
+          <div>
+            <p class="aboutus__contact-details">
+              <i class="fa-solid fa-envelope"></i><span> Email:</span>
+              <a href="mailto:kontakt@forest.pl">kontakt@forest.pl</a>
+            </p>
+          </div>
       </section>
     </main>
 
