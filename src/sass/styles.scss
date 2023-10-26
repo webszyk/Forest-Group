@@ -111,7 +111,7 @@ body {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    background-image: url("/dist/img/jungle-small.jpg");
+    background-image: url("dist/img/jungle-small.jpg");
     background-position: center;
     background-size: cover;
     z-index: -1;
@@ -225,7 +225,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url("/dist/img/girl-small.jpg");
+    background-image: url("dist/img/girl-small.jpg");
     background-position: center;
     background-size: cover;
     height: 40vh;
@@ -266,6 +266,10 @@ body {
       padding: 0.5em 1em;
       color: rgb(37, 37, 37);
       z-index: 0;
+
+      &--fulloffer {
+        margin-bottom: 3em;
+      }
     }
 
     &-btn:hover {
@@ -278,7 +282,7 @@ body {
     justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
-    padding: 3em 5em;
+    padding: 1.5em 5em;
     border-radius: 8px;
   }
 
@@ -531,7 +535,6 @@ footer {
     &__info {
       &-text {
         padding: 0.5em;
-        margin-bottom: 2em;
         text-align: center;
       }
     }
@@ -693,7 +696,7 @@ footer {
 
   .hero {
     &__img {
-      background-image: url("/dist/img/jungle-big.jpg");
+      background-image: url("dist/img/jungle-big.jpg");
       height: 55vh;
     }
 
@@ -717,7 +720,7 @@ footer {
 
   .banner {
     &__img {
-      background-image: url("/dist/img/girl-big.jpg");
+      background-image: url("dist/img/girl-big.jpg");
 
       &-title {
         padding: 1em 4.7em;
