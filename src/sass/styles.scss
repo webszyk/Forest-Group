@@ -111,7 +111,7 @@ body {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    background-image: url("dist/img/jungle-small.jpg");
+    background-image: url("./dist/img/jungle-small.jpg");
     background-position: center;
     background-size: cover;
     z-index: -1;
@@ -225,7 +225,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url("dist/img/girl-small.jpg");
+    background-image: url("./dist/img/girl-small.jpg");
     background-position: center;
     background-size: cover;
     height: 40vh;
@@ -696,7 +696,7 @@ footer {
 
   .hero {
     &__img {
-      background-image: url("dist/img/jungle-big.jpg");
+      background-image: url("./dist/img/jungle-big.jpg");
       height: 55vh;
     }
 
@@ -720,7 +720,7 @@ footer {
 
   .banner {
     &__img {
-      background-image: url("dist/img/girl-big.jpg");
+      background-image: url("./dist/img/girl-big.jpg");
 
       &-title {
         padding: 1em 4.7em;
