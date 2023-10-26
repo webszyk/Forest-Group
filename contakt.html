@@ -12,22 +12,64 @@
       name="description"
       content="Jeśli nie wiesz jak zapisać się na wycieczkę po lesie lub kiedy i jak zwiedzać nasze oryginalne oraz najpięknejsze lasy to po prostu napisz do nas."
     />
-    <!-- @include 'styles.kit' -->
+    <link rel="icon" type="image/x-icon" href="/dist/img/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400;700&display=swap"
+  rel="stylesheet"
+/>
+<link rel="stylesheet" href="/dist/css/hamburgers.min.css" />
+<link rel="stylesheet" href="/dist/css/styles.min.css" />
+
+<script
+  src="https://kit.fontawesome.com/1e2b8f248a.js"
+  crossorigin="anonymous"
+></script>
+
   </head>
   <body>
-    <!-- @include 'nav.kit' -->
+    <button class="hamburger hamburger--spring" type="button">
+  <span class="hamburger-box">
+    <span class="hamburger-inner"></span>
+  </span>
+</button>
+<nav class="nav nav__mobile">
+  <div class="nav__items">
+    <a href="index.html#home" class="nav__item">Home</a>
+    <a href="index.html#onas" class="nav__item">O nas</a>
+    <a href="index.html#oferta" class="nav__item">Oferta</a>
+    <a href="contakt.html" class="nav__item">Kontakt</a>
+  </div>
+  <div class="nav__logo">
+    <a href="index.html"><i class="fa-solid fa-tree"></i> Forest</a>
+  </div>
+</nav>
+
+<nav class="nav wrapper nav__desktop">
+  <div class="nav__logo">
+    <a href="index.html"><i class="fa-solid fa-tree"></i> Forest</a>
+  </div>
+  <div class="nav__items">
+    <a href="index.html#home" class="nav__item">Home</a>
+    <a href="index.html#onas" class="nav__item">O nas</a>
+    <a href="index.html#oferta" class="nav__item">Oferta</a>
+    <a href="contakt.html" class="nav__item">Kontakt</a>
+  </div>
+</nav>
+
 
     <header class="hero__img" id="home">
       <div class="hero__txt wrapper">
         <p>Forest Group</p>
-        <h1>Napisz do nas jeśli chciałbyś więcej informacji odnośie lasow</h1>
+        <h1>Napisz do nas jeśli szukasz informacji odnośie lasow</h1>
       </div>
       <div class="hero__shadow"></div>
     </header>
 
     <main>
 
-      <section class="aboutus" id="onas">
+      <section class="aboutus" id="kontakt">
         <div class="wrapper">
           <h2 class="section-title">Kontakt</h2>
 
@@ -60,7 +102,7 @@
                   class="aboutus__form-box"
                   placeholder="napisz swoja wiadomość..."
                 ></textarea>
-                <button class="offer__card-btn " type="submit">Wyślij</button>
+                <button class="offer__card-btn " type="submit" aria-label="przycisk wyslij">Wyślij</button>
               </form>
             </div>
             <div class="aboutus__box-text">
@@ -99,7 +141,48 @@
       </section>
     </main>
 
-    <!-- @include 'footer.kit' -->
+    <footer>
+  <div class="wrapper">
+    <div class="footer__boxes">
+      <div class="footer__box-logo">
+        <i class="fa-solid fa-tree"></i> Forest
+      </div>
+
+      <div class="footer__box">
+        <div class="footer__box-info">
+          <h3 class="footer__box-title">O nas</h3>
+          <ul class="footer__box-list">
+            <li class="footer__box-item"><a href="#">Historia</a></li>
+            <li class="footer__box-item"><a href="#">Parki</a></li>
+            <li class="footer__box-item"><a href="#">Opinie</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__box-info">
+          <h3 class="footer__box-title">Nasza firma</h3>
+          <ul class="footer__box-list">
+            <li class="footer__box-item"><a href="#">Praca</a></li>
+            <li class="footer__box-item"><a href="#">Kadry</a></li>
+            <li class="footer__box-item"><a href="#">Zarząd</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__box-info">
+          <h3 class="footer__box-title">Dokumenty</h3>
+          <ul class="footer__box-list">
+            <li class="footer__box-item"><a href="#">Wnioski</a></li>
+            <li class="footer__box-item"><a href="#">Rezerwacje</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr />
+  <p class="footer-text">
+    &copy; <span class="footer__year"></span> Forest Group Company Ltd. | Wykonanie: Karolina
+  </p>
+</footer>
+
 
     <script src="/dist/js/main.min.js"></script>
   </body>

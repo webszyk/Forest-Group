@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="author" content="KarolinaSzymaszkiewicz" />
+    <meta name="author" content="KarolinaSzym" />
     <meta name="robots" content="index follow max-image-preview:standard" />
     <title>
       Najpiękniejsze parki na dolnym śląsku - odpocznij | Forest Group
@@ -12,6 +12,7 @@
       name="description"
       content="Szukasz natury oraz odpoczynku w swojej okolicy? Zapraszamy do naszych chronionych pięknych parków na spotkanie z naturą! Przyjdź i sprawdź sam"
     />
+    <link rel="icon" type="image/x-icon" href="dist/img/favicon.ico" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link
@@ -20,6 +21,7 @@
 />
 <link rel="stylesheet" href="/dist/css/hamburgers.min.css" />
 <link rel="stylesheet" href="/dist/css/styles.min.css" />
+
 <script
   src="https://kit.fontawesome.com/1e2b8f248a.js"
   crossorigin="anonymous"
@@ -34,10 +36,10 @@
 </button>
 <nav class="nav nav__mobile">
   <div class="nav__items">
-    <a href="#home" class="nav__item">Home</a>
-    <a href="#onas" class="nav__item">O nas</a>
-    <a href="#oferta" class="nav__item">Oferta</a>
-    <a href="kontakt.html" class="nav__item">Kontakt</a>
+    <a href="index.html#home" class="nav__item">Home</a>
+    <a href="index.html#onas" class="nav__item">O nas</a>
+    <a href="index.html#oferta" class="nav__item">Oferta</a>
+    <a href="contakt.html" class="nav__item">Kontakt</a>
   </div>
   <div class="nav__logo">
     <a href="index.html"><i class="fa-solid fa-tree"></i> Forest</a>
@@ -49,10 +51,10 @@
     <a href="index.html"><i class="fa-solid fa-tree"></i> Forest</a>
   </div>
   <div class="nav__items">
-    <a href="#home" class="nav__item">Home</a>
-    <a href="#onas" class="nav__item">O nas</a>
-    <a href="#oferta" class="nav__item">Oferta</a>
-    <a href="kontakt.html" class="nav__item">Kontakt</a>
+    <a href="index.html#home" class="nav__item">Home</a>
+    <a href="index.html#onas" class="nav__item">O nas</a>
+    <a href="index.html#oferta" class="nav__item">Oferta</a>
+    <a href="contakt.html" class="nav__item">Kontakt</a>
   </div>
 </nav>
 
@@ -73,7 +75,7 @@
           <div class="aboutus__box">
             <div class="aboutus__box-img">
               <img
-                src="/dist/img/waters-small.jpg"
+                src="./dist/img/waters-small.jpg"
                 alt="Piękny widok na jezorio i bujnie zielone drzewa."
               />
             </div>
@@ -108,8 +110,11 @@
             <p class="offer__info-text">
               Wybierz jedną z naszych wspaniałych ofert!
             </p>
-            <a href="oferta.html" class="offer__info-btn link"
-              >Sprawdź pełną ofertę</a
+            <a
+              href="offer.html"
+              aria-label="Poznaj naszą pełną ofertę wycieczek po lasach"
+              class="offer__info-btn link"
+              >Dodatkowo sprawdź pełną ofertę</a
             >
           </div>
 
@@ -140,7 +145,9 @@
                 </p>
               </div>
 
-              <button class="offer__card-btn">Wybierz</button>
+              <button class="offer__card-btn" aria-label="przycisk wybierz">
+                Wybierz
+              </button>
             </div>
 
             <div class="offer__card-info" onclick="void(1)">
@@ -169,7 +176,10 @@
                 </p>
               </div>
 
-              <button class="offer__card-btn offer__card-btn--highlight">
+              <button
+                class="offer__card-btn offer__card-btn--highlight"
+                aria-label="przycisk wybierz"
+              >
                 Wybierz
               </button>
             </div>
@@ -200,7 +210,9 @@
                 </p>
               </div>
 
-              <button class="offer__card-btn">Wybierz</button>
+              <button class="offer__card-btn" aria-label="przycisk wybierz">
+                Wybierz
+              </button>
             </div>
           </div>
         </div>
@@ -250,6 +262,6 @@
 </footer>
 
 
-    <script src="/dist/js/main.min.js"></script>
+    <script src="./dist/js/main.min.js"></script>
   </body>
 </html>

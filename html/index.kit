@@ -12,6 +12,7 @@
       name="description"
       content="Szukasz natury oraz odpoczynku w swojej okolicy? Zapraszamy do naszych chronionych pięknych parków na spotkanie z naturą! Przyjdź i sprawdź sam"
     />
+    <link rel="icon" type="image/x-icon" href="dist/img/favicon.ico" />
     <!-- @include 'styles.kit' -->
   </head>
   <body>
@@ -33,7 +34,7 @@
           <div class="aboutus__box">
             <div class="aboutus__box-img">
               <img
-                src="../../dist/img/waters-small.jpg"
+                src="./dist/img/waters-small.jpg"
                 alt="Piękny widok na jezorio i bujnie zielone drzewa."
               />
             </div>
@@ -68,7 +69,10 @@
             <p class="offer__info-text">
               Wybierz jedną z naszych wspaniałych ofert!
             </p>
-            <a href="oferta.html" class="offer__info-btn link"
+            <a
+              href="offer.html"
+              aria-label="Poznaj naszą pełną ofertę wycieczek po lasach"
+              class="offer__info-btn link"
               >Dodatkowo sprawdź pełną ofertę</a
             >
           </div>
@@ -100,7 +104,9 @@
                 </p>
               </div>
 
-              <button class="offer__card-btn">Wybierz</button>
+              <button class="offer__card-btn" aria-label="przycisk wybierz">
+                Wybierz
+              </button>
             </div>
 
             <div class="offer__card-info" onclick="void(1)">
@@ -129,7 +135,10 @@
                 </p>
               </div>
 
-              <button class="offer__card-btn offer__card-btn--highlight">
+              <button
+                class="offer__card-btn offer__card-btn--highlight"
+                aria-label="przycisk wybierz"
+              >
                 Wybierz
               </button>
             </div>
@@ -160,7 +169,9 @@
                 </p>
               </div>
 
-              <button class="offer__card-btn">Wybierz</button>
+              <button class="offer__card-btn" aria-label="przycisk wybierz">
+                Wybierz
+              </button>
             </div>
           </div>
         </div>
@@ -169,6 +180,6 @@
 
     <!-- @include 'footer.kit' -->
 
-    <script src="../..//dist/js/main.min.js"></script>
+    <script src="./dist/js/main.min.js"></script>
   </body>
 </html>
