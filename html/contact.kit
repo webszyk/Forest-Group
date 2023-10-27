@@ -31,10 +31,10 @@
         <div class="wrapper">
           <h2 class="section-title">Kontakt</h2>
 
-          <div class="aboutus__box">
-            <div class="aboutus__box-text">
+          <div class="aboutus__box-contacts">
+            <div class="aboutus__box-form">
               <h3 class="aboutus__title">Formularz kontakowy</h3>
-              <form class="aboutus__form">
+             <!--  <form class="aboutus__form">
                 <label for="name" class="aboutus__form-label">Imię</label>
                 <input
                   type="text"
@@ -61,20 +61,77 @@
                   placeholder="napisz swoja wiadomość..."
                 ></textarea>
                 <button class="offer__card-btn " type="submit" aria-label="przycisk wyslij">Wyślij</button>
+              </form> -->
+
+              <form>
+        
+                <div class="form-box">
+                  <label for="username">Nazwa użytkownika: </label>
+                  <input
+                    type="text"
+                    id="username"
+                    placeholder="Podaj nazwę użytkownika"
+                  />
+                  <p class="error-text">error</p>
+        
+                </div>
+        
+                <!-- <div class="form-box">
+                  <label for="password">Hasło: </label>
+                  <input type="password" id="password" placeholder="Podaj hasło" />
+                  <p class="error-text">error</p>
+                </div>
+        
+                  <div class="form-box">
+                  <label for="password2">Powtórz hasło: </label>
+                  <input type="password" id="password2" placeholder="Powtórz hasło" />
+                  <p class="error-text">error</p>
+               </div> -->
+        
+                  <div class="form-box">
+                  <label for="email">Adres e-mail: </label>
+                  <input type="email" id="email" placeholder="Podaj adres e-mail" />
+                  <p class="error-text">error</p>
+                </div>
+
+                <div class="form-box">
+                  <label for="msg"
+                  >Twoja wiadomość</label
+                >
+                <textarea
+                  name="msg"
+                  id="msg"
+                  placeholder="Napisz swoja wiadomość..."
+                ></textarea>
+                  <p class="error-text">error</p>
+                </div>
+        
+                  <div class="control-buttons">
+                    <button class="clear offer__card-btn">Wyczyść</button>
+                    <button class="send offer__card-btn offer__card-btn--highlight">Wyślij</button>
+                  </div>
+        
+                  <div class="popup ">
+                    <p>Formularz został poprawnie wysłany 👌</p>
+                    <button class="close">Zamknij</button>
+                  </div>
+                </div>
               </form>
-            </div>
-            <div class="aboutus__box-text">
-              <h3 class="aboutus__title">Gdzie nas znajdziesz?</h3>
-              <div class="aboutus__map">
-                <iframe
-                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10239.592929627293!2d19.8928442!3d50.0881922!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47165a326d015c3b%3A0x47a12cd367a1f34e!2sRestauracja%20McDonald&#39;s!5e0!3m2!1spl!2spl!4v1698236753952!5m2!1spl!2spl"
-                width="600"
-                height="450"
-                style="border: 0"
-                allowfullscreen=""
-                loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"
-              ></iframe>
+
+
+              <div class="aboutus__box-form">
+                <h3 class="aboutus__title">Gdzie nas znajdziesz?</h3>
+                <div class="aboutus__map">
+                  <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10239.592929627293!2d19.8928442!3d50.0881922!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47165a326d015c3b%3A0x47a12cd367a1f34e!2sRestauracja%20McDonald&#39;s!5e0!3m2!1spl!2spl!4v1698236753952!5m2!1spl!2spl"
+                  width="600"
+                  height="450"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+                </div>
               </div>
             </div>
           </div>
