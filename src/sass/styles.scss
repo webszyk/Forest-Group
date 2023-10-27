@@ -184,32 +184,6 @@ body {
   &__text {
     line-height: 2em;
   }
-  /* &__form {
-    display: flex;
-    flex-direction: column;
-
-   /* &-label {
-      margin-bottom: 0.5em;
-    }
-    &-box {
-      margin-bottom: 1em;
-      padding: 1em 2em;
-      border-radius: 8px;
-      box-shadow: 0 0 5px rgb(150, 150, 150);
-      border: 3px solid rgb(255, 255, 255);
-    }
-    &-box:focus {
-      outline: none;
-      border: 3px solid #4faf82;
-    }
-    textarea {
-      max-width: 100%;
-      min-width: 100%;
-      width: 100%;
-      min-height: 180px;
-      max-height: 180px;
-    }
-  } */
 
   &__contact {
     display: flex;
@@ -241,54 +215,54 @@ body {
   }
 }
 
-.form-box {
-  margin-bottom: 15px;
-}
+.form {
+  &__box {
+    margin-bottom: 15px;
 
-.form-box label {
-  display: inline-block;
-  margin-bottom: 0.5em;
-}
+    label {
+      display: inline-block;
+      margin-bottom: 0.5em;
+    }
 
-.form-box input {
-  font-family: "Montserrat", sans-serif;
-  width: 100%;
-  padding: 1em;
-  border: 1px solid rgb(197, 197, 197);
-  border-radius: 8px;
-}
+    input {
+      font-family: "Montserrat", sans-serif;
+      width: 100%;
+      padding: 1em;
+      border: 1px solid rgb(197, 197, 197);
+      border-radius: 8px;
+    }
 
-.form-box textarea {
-  font-family: "Montserrat", sans-serif;
-  max-width: 100%;
-  min-width: 100%;
-  width: 100%;
-  min-height: 200px;
-  border: 1px solid rgb(197, 197, 197);
-  border-radius: 8px;
-  padding: 1em;
-}
+    textarea {
+      font-family: "Montserrat", sans-serif;
+      max-width: 100%;
+      min-width: 100%;
+      width: 100%;
+      min-height: 200px;
+      border: 1px solid rgb(197, 197, 197);
+      border-radius: 8px;
+      padding: 1em;
+    }
 
-.form-box.error input {
-  border: 1px solid rgb(24, 134, 55);
-  background-color: rgba(29, 174, 36, 0.248);
-}
+    .error-text {
+      font-size: 1.4rem;
+      color: rgb(24, 134, 55);
+      margin: 0.5em 0.5em;
+      visibility: hidden;
+    }
 
-.form-box.error textarea {
-  border: 1px solid rgb(24, 134, 55);
-  background-color: rgba(29, 174, 36, 0.248);
-}
+    &.error input {
+      border: 1px solid rgb(24, 134, 55);
+      background-color: rgba(29, 174, 36, 0.248);
+    }
 
-.form-box .error-text {
-  margin: 0.5em 0 0 1em;
-  font-size: 1.4rem;
-  color: rgb(24, 134, 55);
-  margin: 0.5em 0.5em;
-  visibility: hidden;
-}
-
-.form-box.error .error-text {
-  visibility: visible;
+    &.error textarea {
+      border: 1px solid rgb(24, 134, 55);
+      background-color: rgba(29, 174, 36, 0.248);
+    }
+    &.error .error-text {
+      visibility: visible;
+    }
+  }
 }
 
 .control-buttons {
