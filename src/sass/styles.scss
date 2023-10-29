@@ -1,9 +1,5 @@
-*,
-*::after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
+@use "reset" as *;
+@use "colors" as *;
 
 html {
   font-size: 10px;
@@ -14,7 +10,7 @@ html {
 body {
   font-family: "Montserrat", sans-serif;
   font-size: 1.6rem;
-  background-color: #fff;
+  background-color: $white-color;
 }
 
 .wrapper {
@@ -34,7 +30,7 @@ body {
 }
 
 .shadow-bg {
-  box-shadow: 5px -4px 10px rgb(37, 37, 37);
+  box-shadow: 5px -4px 10px $gray-color;
 }
 
 /* .active {
@@ -57,7 +53,7 @@ body {
     &-inner,
     &-inner::before,
     &-inner::after {
-      background-color: #000000;
+      background-color: $black-color;
       z-index: 500;
     }
   }
@@ -95,7 +91,7 @@ body {
 
     a {
       text-decoration: none;
-      color: rgb(37, 37, 37);
+      color: $gray-color;
     }
   }
 
@@ -108,11 +104,11 @@ body {
       padding: 1.6em 1.4em;
       font-size: 2rem;
       text-decoration: none;
-      color: rgb(37, 37, 37);
+      color: $gray-color;
     }
     a:hover {
       background-color: black;
-      color: #fff;
+      color: $white-color;
     }
   }
 }
@@ -131,7 +127,7 @@ body {
   }
 
   &__txt {
-    color: #fff;
+    color: $white-color;
     z-index: 5;
   }
 
@@ -197,11 +193,11 @@ body {
       text-align: center;
     }
     i {
-      color: #4faf82;
+      color: $btn-color;
     }
     a {
       text-decoration: none;
-      color: rgb(37, 37, 37);
+      color: $gray-color;
     }
     span {
       font-weight: bold;
@@ -245,19 +241,19 @@ body {
 
     .error-text {
       font-size: 1.4rem;
-      color: rgb(24, 134, 55);
+      color: $form-color;
       margin: 0.5em 0.5em;
       visibility: hidden;
     }
 
     &.error input {
-      border: 1px solid rgb(24, 134, 55);
-      background-color: rgba(29, 174, 36, 0.248);
+      border: 1px solid $form-color;
+      background-color: $bg-form-color;
     }
 
     &.error textarea {
-      border: 1px solid rgb(24, 134, 55);
-      background-color: rgba(29, 174, 36, 0.248);
+      border: 1px solid $form-color;
+      background-color: $bg-form-color;
     }
     &.error .error-text {
       visibility: visible;
@@ -269,15 +265,6 @@ body {
   display: flex;
   justify-content: center;
   flex-direction: column;
-}
-
-.send,
-.clear,
-.close {
-  display: block;
-  margin-left: 3em;
-  cursor: pointer;
-  transition: background-color 0.3s;
 }
 
 .send:hover,
@@ -298,7 +285,7 @@ body {
   font-size: 16px;
   width: 600px;
   height: 200px;
-  background-color: #fff;
+  background-color: $white-color;
   border-radius: 3em;
   border: 2px solid #4e596a;
   transition: top 0.5s;
@@ -330,8 +317,8 @@ body {
 
     &-title {
       position: absolute;
-      color: #fff;
-      border: 2px solid #fff;
+      color: $white-color;
+      border: 2px solid $white-color;
       z-index: 5;
     }
 
@@ -362,7 +349,7 @@ body {
       position: relative;
       text-decoration: none;
       padding: 0.5em 1em;
-      color: rgb(37, 37, 37);
+      color: $gray-color;
       z-index: 0;
 
       &--fulloffer {
@@ -371,7 +358,7 @@ body {
     }
 
     &-btn:hover {
-      color: #fff;
+      color: $white-color;
     }
   }
 
@@ -429,19 +416,19 @@ body {
       transition: background-color 0.5s, color 0.5s;
 
       &--highlight {
-        background-color: #4faf82;
-        box-shadow: 0 0 10px #4faf82;
+        background-color: $btn-color;
+        box-shadow: 0 0 10px $btn-color;
         transition: color 0.5s;
       }
 
       &--highlight:hover {
-        color: #fff;
+        color: $white-color;
       }
     }
     &-btn:hover {
-      box-shadow: 0 0 15px #4faf82;
-      background-color: #4faf82;
-      color: #fff;
+      box-shadow: 0 0 15px $btn-color;
+      background-color: $btn-color;
+      color: $white-color;
     }
   }
 }
@@ -458,9 +445,9 @@ body {
   left: 0;
   height: 0;
   bottom: 0;
-  background-color: #4faf82;
+  background-color: $btn-color;
   border-radius: 8px;
-  border: 2px solid #4faf82;
+  border: 2px solid $btn-color;
   z-index: -1;
 }
 .link:hover::after {
@@ -469,7 +456,7 @@ body {
 
 .bg {
   &__img {
-    background-image: linear-gradient(147deg, #166d3b 0%, #000000 74%);
+    background-image: linear-gradient(147deg, #166d3b 0%, $black-color 74%);
     height: 30vh;
   }
 
@@ -491,14 +478,14 @@ body {
 
     i {
       justify-content: center;
-      color: #fff;
+      color: $white-color;
       font-size: 5rem;
       margin-bottom: 1em;
     }
 
     p {
       justify-content: center;
-      color: #fff;
+      color: $white-color;
       font-size: 2rem;
       text-transform: uppercase;
     }
@@ -542,7 +529,7 @@ footer {
 
     a {
       text-decoration: none;
-      color: rgb(37, 37, 37);
+      color: $gray-color;
     }
     a:hover {
       border-bottom: 3px solid black;
@@ -671,6 +658,7 @@ footer {
 
   .control-buttons {
     flex-direction: row;
+    justify-content: space-evenly;
   }
 
   .hero {
@@ -773,7 +761,7 @@ footer {
     position: fixed;
     top: 0;
     width: 100%;
-    background-color: #fff;
+    background-color: $white-color;
 
     &__desktop {
       display: flex;
@@ -802,7 +790,7 @@ footer {
 
         a {
           text-decoration: none;
-          color: rgb(37, 37, 37);
+          color: $gray-color;
         }
       }
     }
