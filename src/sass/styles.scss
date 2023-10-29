@@ -108,10 +108,11 @@ body {
       padding: 1.6em 1.4em;
       font-size: 2rem;
       text-decoration: none;
+      color: $gray-color;
     }
     a:hover {
       background-color: black;
-      color: $white-color;
+      color: $btn-color;
     }
   }
 }
@@ -764,6 +765,7 @@ footer {
     position: fixed;
     top: 0;
     width: 100%;
+    height: auto;
     background-color: $white-color;
 
     &__desktop {
@@ -773,8 +775,19 @@ footer {
       align-items: center;
       padding: 0 1em;
 
+      &-items {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+      }
+
       &-item {
+        padding: 1em 2em;
+        text-decoration: none;
         transition: color 0.3s, background-color 0.3s;
+        color: $gray-color;
+
         &--active,
         &:hover {
           color: $white-color;
