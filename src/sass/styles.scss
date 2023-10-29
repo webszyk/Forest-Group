@@ -7,6 +7,10 @@ html {
   scroll-padding-top: 20px;
 }
 
+.section-scroll {
+  scroll-margin-top: 66px;
+}
+
 body {
   font-family: "Montserrat", sans-serif;
   font-size: 1.6rem;
@@ -104,7 +108,6 @@ body {
       padding: 1.6em 1.4em;
       font-size: 2rem;
       text-decoration: none;
-      color: $gray-color;
     }
     a:hover {
       background-color: black;
@@ -769,6 +772,15 @@ footer {
       justify-content: space-between;
       align-items: center;
       padding: 0 1em;
+
+      &-item {
+        transition: color 0.3s, background-color 0.3s;
+        &--active,
+        &:hover {
+          color: $white-color;
+          background-color: $black-color;
+        }
+      }
     }
 
     &__item {

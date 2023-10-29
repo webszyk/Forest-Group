@@ -29,7 +29,7 @@
 ></script>
 
   </head>
-  <body class="main-page">
+  <body>
     <nav class="nav">
   <div class="nav__logo">
     <a href="index.html"><i class="fa-solid fa-tree"></i> Forest</a>
@@ -37,7 +37,7 @@
 
   <div class="nav__mobile">
     <div class="nav__items">
-      <a href="index.html" class="active">Home</a>
+      <a href="index.html">Home</a>
       <a href="index.html#onas">O nas</a>
       <a href="index.html#oferta">Oferta</a>
       <a href="kontakt.html">Kontakt</a>
@@ -55,17 +55,21 @@
       <a href="index.html"><i class="fa-solid fa-tree"></i> Forest</a>
     </div>
 
-    <div class="nav__items">
-      <a href="index.html" class="active section">Home</a>
-      <a href="index.html#onas" class="section">O nas</a>
-      <a href="index.html#oferta" class="section">Oferta</a>
-      <a href="kontakt.html" class="section">Kontakt</a>
+    <div class="nav__items nav__desktop-items">
+      <a
+        href="index.html#home"
+        class="nav__desktop-item nav__desktop-item--active"
+        >Home</a
+      >
+      <a href="index.html#onas" class="nav__desktop-item">O nas</a>
+      <a href="index.html#oferta" class="nav__desktop-item">Oferta</a>
+      <a href="kontakt.html" class="nav__desktop-item">Kontakt</a>
     </div>
   </div>
 </nav>
 
 
-    <header class="hero__img" id="home">
+    <header class="hero__img section-scroll" id="home">
       <div class="hero__txt wrapper">
         <p>Forest Group</p>
         <h1>Najpiękniejszy park w Twojej okolicy!</h1>
@@ -74,7 +78,7 @@
     </header>
 
     <main>
-      <section class="aboutus" id="onas">
+      <section class="aboutus section-scroll" id="onas">
         <div class="wrapper">
           <h2 class="section-title">O nas</h2>
 
@@ -108,7 +112,7 @@
         <div class="banner__img-shadow"></div>
       </section>
 
-      <section class="offer" id="oferta">
+      <section class="offer section-scroll" id="oferta">
         <div class="wrapper">
           <h2 class="section-title">Oferta</h2>
 
@@ -272,6 +276,7 @@
 </footer>
 
 
-    <script src="./dist/js/main.min.js"></script>
+    <script src="/dist/js/main.min.js"></script>
+    <script src="/dist/js/scroll_spy.min.js"></script>
   </body>
 </html>
