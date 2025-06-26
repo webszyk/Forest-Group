@@ -1,7 +1,7 @@
 # Forest Group project 🌲
 Live demo: [Site](https://karlasz.github.io/Forest-Group/index)
 
-A responsive multi-section website concept for a fictional company named Forest Group. Designed as a clean, modern landing page template ideal for creative agencies, eco-focused startups, or portfolio showcases.
+A responsive multi-section website concept layout company named Forest Group. Designed as a clean, modern landing page template ideal for creative agencies, eco-focused startups, or portfolio showcases.
 
 🌿 Overview
 This project demonstrates a complete static website layout including:
