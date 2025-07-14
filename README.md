@@ -1,5 +1,5 @@
 # Forest Group project 🌲
-Live demo: [Site](https://karlasz.github.io/Forest-Group/index)
+Live demo: [Site](https://webszyk.github.io/Forest-Group/index)
 
 A responsive multi-section website concept layout company named Forest Group. Designed as a clean, modern landing page template ideal for creative agencies, eco-focused startups, or portfolio showcases.
 
