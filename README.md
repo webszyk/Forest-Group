@@ -1,9 +1,11 @@
 # Forest Group project 🌲
 Live demo: [Site](https://webszyk.github.io/Forest-Group/index)
-- wykonanie [www.webszyk.pl](https://www.webszyk.pl)
+
 A responsive multi-section website concept layout company named Forest Group. Designed as a clean, modern landing page template ideal for creative agencies, eco-focused startups, or portfolio showcases.
+- made by [www.webszyk.pl](https://www.webszyk.pl)
 
 🌿 Overview
+
 This project demonstrates a complete static website layout including:
 
 Hero section with call-to-action
@@ -53,4 +55,5 @@ Open index.html in your browser.
 
 No build tools or additional dependencies required.
 
-- wykonanie [www.webszyk.pl](https://www.webszyk.pl)
+- made by [www.webszyk.pl](https://www.webszyk.pl)
+
